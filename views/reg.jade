@@ -1,0 +1,14 @@
+extends layout
+
+block content 
+  h3 Регистрация
+  form(method='POST', action='/reg')
+    Пользователь 
+    input(type='text', name='username')
+    br(style='clear: both')
+    br
+    Пароль 
+    input(type='password', name='password')
+    br(style='clear: both')
+    br
+    input(type='submit', name='Ok')

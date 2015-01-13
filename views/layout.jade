@@ -1,0 +1,37 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Мой сайт! 
+    meta(name='description', content='')
+    meta(name='keyword', content='')
+    link(href='stylesheets/style.css', rel='stylesheet')
+    link(type='text/css', href='stylesheets/bootstrap.min.css', rel='stylesheet')
+  body
+    .header
+      img(src='images/logo.png')
+      h1 История древнего мира 
+      nav.topmenu
+        a(href='index') Главная 
+        a(href='ancient_greece') Древняя Греция 
+        a(href='ancient_rome') Древний Рим 
+        a(href='glossary') Словарик 
+        a(href='information_sources') Источники 
+    div.content
+      div.col-md-3
+        block menuleft
+        if userid
+          a(href = '/logout') Выход
+          a(href = '/cabinet') Кабинет
+        else
+          a(href = '/reg') Вход/Регистрация
+      div.col-md-6
+        div.mainblock
+          block content 
+      div.col-md-3
+        pre.
+          А вот и реклама...           
+    div.footer
+      br(style='clear: both')
+      br
+      &copy; 2014

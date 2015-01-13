@@ -1,0 +1,125 @@
+.logo {
+  float: left;
+}
+
+.header h1 {
+  float: right;
+  color: #a52a2a;
+  text-shadow: 1px 1px 1px gold;
+/*  text-align: center;*/
+  padding: 30px;
+  padding-right: 40px;
+}
+
+.header {
+  height: 200px;
+  background: url('../images/bg.jpg');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #cecece;
+}
+
+.topmenu {
+  display: -moz.box;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.topmenu a {
+  display: block;
+  -moz-box-flex: 1;
+  -webkit-flex; 1;
+  flex: 1;
+  background: url('../images/fon_main1.jpg'); /*#d29f60;*/
+  color: #fffff0;
+  text-decoration: none;
+  text-align: center;
+  border-right: 1px solid white;
+  padding: 2px;
+}
+
+.topmenu a:hover {
+  color: maroon;
+}
+.btn {
+  width: 100%;
+}
+
+.mainblock {
+  background: white;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px black;
+  padding: 0;
+  margin: 0;
+}
+
+.footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  .logo {
+    display: none;
+  }
+  .header h1 {
+    height: 60px;
+  }
+}
+
+.topblock {
+  position: fixed;
+  top: 20%;
+}
+
+.artblock {
+  padding-top: 5px;
+  padding-bottom: 20px;
+  overflow:hidden;
+/*  clear: bottom;*/
+}
+
+.arthead {
+  color: #a52a2a;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.artimage {
+  float: left;
+  padding-top: 7px;
+  padding-left: 10px;
+  padding-right: 15px;
+  padding-bottom: 4px;
+/*  width: 300px;*/
+}
+
+.arttext {
+/*  float: top;*/
+  padding-left: 10px;
+  padding-right: 15px;
+  clear: bottom;
+  text-align: justify;
+}
+
+div {
+  border: 0px solid red;
+}
+
+.footer {
+}
+
+.content {
+}
+ 
+h4 {
+  font-style: italic;	
+  padding: 10px;
+}
