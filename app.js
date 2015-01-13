@@ -148,10 +148,12 @@ io.on('connection', function(socket){
 });
 
 http.listen(config.get('port'), function(){
-  console.log('listening on:' + config.get('port'));
+  console.log('listening on: ' + config.get('port'));
 });
 
 //app.listen(3000);
-//app.listen(config.get('port'));
+app.listen(config.get('port2'), function(){
+  console.log('listening on: ' + config.get('port2'));
+});
 
 module.exports = app;

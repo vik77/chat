@@ -26,6 +26,7 @@ exports.send = function(req, res, next){
 		  fs.writeFile(newPath, data, function (err) {
       // запись в базу
       var Users = require('../models/users').Users;
+	  // можно найти пользователя по req.session.user
       Users.saveImage(req.body.username, /*req.body.password, */newPath, function(err, user) {
         if (err) {
           console.log(err);
@@ -34,7 +35,7 @@ exports.send = function(req, res, next){
         {
           console.log(req.body.username);
         }
-        req.session.user = user._id;
+//        req.session.user = user._id;
 //        res.redirect('/');
       });
       // открываем загруженный файл
